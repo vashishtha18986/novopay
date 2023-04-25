@@ -1,0 +1,51 @@
+{
+    "basic_details": {
+      "code": "1082",
+      "name": "Sarjapur Office",
+      "description": "Sarjapur Branch office",
+      "office_level": "Branch Office",
+      "parent_office": "HSR Layout Regional",
+      "opened_on": "1514678400000",
+      "external_ref_code": null
+    },
+    "contact_details": {
+      "contact_name": "Joseph G",
+      "mobile_number": "+91 9980312667",
+      "landline": "+91 1234567890",
+      "alternat_number": "+91 802234568",
+      "fax_number": "+91 802234568",
+      "email": "joseph@xyz.com"
+    },
+    "address_details": [
+      {
+        "id": "1",
+        "office_type": "OFFICE",
+        "address_line_1": "18/24 GRA Towers",
+        "address_line_2": "Bellandur",
+        "country": "India",
+        "state": "Karnataka",
+        "district": "Bangalore",
+        "sub_district": "Bellandur",
+        "vtc": "Bellandur",
+        "postal_code": "560103",
+        "landmark": "Near Fire Station",
+        "latitude": "12.9716° N",
+        "longitude": "77.5946° E"
+      },
+      {
+        "id": "2",
+        "office_type": "CORPORATE OFFICE",
+        "address_line_1": "#78 AGS Towers",
+        "address_line_2": "Sarjapur",
+        "country": "India",
+        "state": "Karnataka",
+        "district": "Bangalore",
+        "sub_district": "Sarjapur",
+        "vtc": "Sarjapura",
+        "postal_code": "560102",
+        "landmark": "Near DD Mall",
+        "latitude": "12.9716° N",
+        "longitude": "77.5946° E"
+      }
+    ]
+  }

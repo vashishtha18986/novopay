@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-6 text-center title">Before</div>
+    <div class="col-6 text-center title">After</div>
+</div>
+<ng-container *ngFor="let heading of topHeading">
+    <div class="row">
+        <td class="col-12 text-center border-all"> {{ upperCase(heading[0])}}</td>
+    </div>
+    <ng-container *ngIf="!isCheckArray(heading[1])">
+        <div class="row" *ngFor="let item1 of heading[1]|keyvalue;">
+            <div class="col-6 left"
+                [ngClass]="isDiffValue(item1.value,getValue(heading[2],item1.key))?'':'differnt'">
+                <span class="key">{{key(item1.key)}}</span>: <span class="value">{{item1.value}}</span>
+            </div>
+            <div class="col-6" [ngClass]="isDiffValue(item1.value,getValue(heading[2],item1.key))?'':'differnt'">
+                <span class="key">{{key(item1.key)}}</span> : <span class="value">{{getValue(heading[2],item1.key)}}</span>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="isCheckArray(heading[1])">
+        <div class="row" *ngFor="let item of heading[1];let i=index;">
+            <div class="col-12" *ngFor="let item1 of item|keyvalue;">
+                <div class="row">
+                    <div class="col-6 left"
+                        [ngClass]="isDiffValue(item1.value,getValue(heading[2][i],item1.key))?'':'differnt'">
+                        <span class="key"> {{key(item1.key)}}</span>: <span class="value">{{item1.value}}</span>
+                    </div>
+                    <div class="col-6"
+                        [ngClass]="isDiffValue(item1.value,getValue(heading[2][i],item1.key))?'':'differnt'">
+                        <span class="key"> {{key(item1.key)}}</span>: <span class="value">{{getValue(heading[2][i],item1.key)}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</ng-container>

@@ -1,0 +1,36 @@
+{
+    "basic_details": {
+      "code": "1082",
+      "name": "Sarjapur Office",
+      "description": "Sarjapur Branch office",
+      "office_level": "Branch Office",
+      "parent_office": "Bangalore South Office",
+      "opened_on": "1514678400000",
+      "external_ref_code": null
+    },
+    "contact_details": {
+      "contact_name": "John Smith",
+      "mobile_number": "+91 9834567891",
+      "landline": "+91 1234567890",
+      "alternat_number": "+91 802234568",
+      "fax_number": "+91 802234568",
+      "email": "john.smith@abc.in"
+    },
+    "address_details": [
+      {
+        "id": "2",
+        "office_type": "CORPORATE OFFICE",
+        "address_line_1": "#15 RR COMPLEX",
+        "address_line_2": "Sarjapur",
+        "country": "India",
+        "state": "Karnataka",
+        "district": "Bangalore",
+        "sub_district": null,
+        "vtc": "Sarjapura",
+        "postal_code": "560102",
+        "landmark": null,
+        "latitude": "12.9716° N",
+        "longitude": "77.5946° E"
+      }
+    ]
+  }
